@@ -1,4 +1,4 @@
-// Human-readable JXA version of Rewind.scpt
+// Human-readable JavaScript representation of PlayPause.scpt
 
 // Checks if QuickTime Player is running,
 var appQuickTime = Application("QuickTime Player")
