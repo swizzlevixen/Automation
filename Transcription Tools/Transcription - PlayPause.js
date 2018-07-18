@@ -8,7 +8,7 @@ appQuickTime.includeStandardAdditions = true
 if (appQuickTime.documents.length > 0) {
     media_document = appQuickTime.documents[0]
     // If playing, pause and jump back 1.5 seconds.
-    if (media_document.playing()) {
+    if (media_document.rate() == 1.0) {
         appQuickTime.pause(media_document)
 		var current_time_var = media_document.currentTime()
         pause_time_var = current_time_var - 1.5
@@ -16,6 +16,9 @@ if (appQuickTime.documents.length > 0) {
 			pause_time_var = 0
 		}
         media_document.currentTime = pause_time_var - 1.5
+	} else if (media_document.playing()) {
+		// Any rate other than 1.0 normal playback
+		appQuickTime.pause(media_document)
     } else {
         // it's paused, so start playing
         appQuickTime.play(media_document)

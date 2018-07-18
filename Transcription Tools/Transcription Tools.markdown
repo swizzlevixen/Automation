@@ -10,16 +10,17 @@ These scripts control a QuickTime Player movie/audio in the background, allowing
 
 Before using the scripts, open the media file you want to transcribe in QuickTime Player. Make sure it's the active movie.
 
+### PlayPause
+
+Plays, pauses, or pauses and jumps back 1.5 seconds when invoked.
+
+- If the movie is paused, the movie starts playing at a normal rate.
+- If the movie is playing at a normal forward rate, the movie pauses, and jumps back 1.5 seconds to provide a buffer for transcription editing.
+- If the movie is playing ay any rate other than 1.0 (fast forward, rewind), the movie pauses, without the jump back.
+
 ### Rewind
 
 Rewinds at 2X, 5X, 10X speed, with successive invocations (wraps around).
-
-### PlayPause
-
-Plays, or pauses and jumps back 1.5 seconds when invoked.
-
-- If the movie is paused, the movie starts playing at a normal rate.
-- If the movie is playing ay any rate (normal, fast forward, rewind), the movie pauses, and jumps back 1.5 seconds to provide a buffer for transcription editing.
 
 ### FastForward
 
