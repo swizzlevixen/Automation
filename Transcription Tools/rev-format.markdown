@@ -33,3 +33,5 @@ Replace (there should be a **trailing space** on this line):
 - RegEx help from [RegExr](https://regexr.com).
 - [Rev](https://www.rev.com/transcription) audio transcription
 - [BBEdit](http://www.barebones.com/products/bbedit/index.html)
+
+*This document was moved from [this gist](https://gist.github.com/bobtiki/903891bade11aaf365464931955ed356)*
